@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO DE ESTUDIANTES</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">    
+            <table border="2">
+                <tr>
+                    <td><label for="cedula">CÉDULA:</label></td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="cedula" 
+                            id="cedula" 
+                            inputmode="numeric"
+                            pattern="[0-9]{10}" 
+                            maxlength="10" 
+                            required
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fecha_nacimiento">FECHA DE NACIMIENTO:</label></td>
+                    <td>
+                        <input 
+                            type="date" 
+                            name="fecha_nacimiento" 
+                            id="fecha_nacimiento" 
+                            max="2010-12-31"
+                            min="2005-01-01" 
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>SELECCIONE 5 MATERIAS:</td>
+                    <td>
+                        <select name="materia1" required>
+                          
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select><br>
+
+                        <select name="materia2" required>
+                        
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select><br>
+
+                        <select name="materia3" required>
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select><br>
+
+                        <select name="materia4" required>
+                       
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select><br>
+
+                        <select name="materia5" required>
+                            
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hoja_vida">HOJA DE VIDA:</label></td>
+                    <td>
+                        <input 
+                            type="file" 
+                            name="hoja_vida" 
+                            id="hoja_vida" 
+                            accept=".pdf" 
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="id_banner">ID BANNER:</label></td>
+                    <td>
+                        <input 
+                            type="text" 
+                            name="id_banner" 
+                            id="id_banner" 
+                            pattern="[A-Z]{3}[0-9]{5}" 
+                            title="Debe contener 3 letras mayúsculas seguidas de 5 números"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <button type="submit">ENVIAR REGISTRO</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
