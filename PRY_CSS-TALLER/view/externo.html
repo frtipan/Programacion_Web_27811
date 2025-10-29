@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a los Formularios</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>FORMULARIOS PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <form action="sever.html" method="get">
+
+
+            <label for="apellidos">INGRESE SU APELLIDO:</label>
+            <input style="animation: alternate;"
+                type="text" 
+                name="apellidos" 
+                id="apellidos"
+                placeholder="fernando"
+                maxlength="5"
+                minlength="2"
+            >  
+
+            <!-- Radio-->
+
+             <label for="">SELECCIONE SU SEXO:</label>
+             <label for="hombre">HOMBRE</label>
+
+             <input 
+             type="radio" 
+             name="sexo" 
+             value="hombre" 
+             id="HOMBRE">
+
+             <label for="mujer">MUJER</label>
+             <input 
+             type="radio" 
+             name="sexo" 
+             value="mujer" 
+             id="MUJER">
+             
+             <label for="otro">DESCONOCIDO</label>
+             <input 
+             type="radio" 
+             name="sexo" 
+             value="desconocido" 
+             id="DESCONOCIDO"
+             disabled
+             >
+        <!-- CHECBO-->
+
+        <label for="">SELECCION SU DIAS DE CLASE DE PRO WEB</label>
+        <label for="lunes">LUNES</label>
+        <input 
+        type="checkbox" 
+        name="dias[]"
+        id="lunes">
+        <label for="martes">MARTES</label>      
+        <input 
+        type="checkbox " 
+        name="dias[]"
+        id="martes">                            
+        <label for="miercoles">MIERCOLES</label>
+        <input 
+        type="checkbox" 
+        name="dias[]"
+        id="miercoles">
+        <label for="jueves">JUEVES</label>
+        <input 
+        type="checkbox" 
+        name="dias[]"
+        id="jueves">
+        <label for="viernes">VIERNES</label>
+        <input 
+        type="checkbox" 
+        name="dias[]"
+        id="viernes">
+
+        <!--INPUT-->
+        <label for="foto">SUBIR SU FOTO DE PERFIL:</label>
+        <input 
+        type="file" 
+        name="foto"
+        id="foto"
+        accept="application/pdf">
+
+ 
+   
+
+ 
+        <select style="" name="materia1" required>
+                          
+                            <option>MATEMÁTICAS</option>
+                            <option>FÍSICA</option>
+                            <option>QUÍMICA</option>
+                            <option>BIOLOGÍA</option>
+                            <option>PROGRAMACIÓN</option>
+                            <option>LITERATURA</option>
+                            <option>HISTORIA</option>
+                        </select><br>
+        <!--Texarea-->
+        <label for="INGRESAR Texto"></label>
+        <br>
+            <textarea style="animation: both;">
+                Como estan
+            </textarea>
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
