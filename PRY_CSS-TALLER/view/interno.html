@@ -7,7 +7,7 @@
 
   <style>
     
-    input[type="text"] {
+    .text_input{
       text-transform: capitalize;   
       border-radius: 6px;          
     }
@@ -21,17 +21,19 @@
       background-color: #fffde7;   
       border-radius: 8px;          
     }
-
-    input[type="checkbox"] {
-      accent-color: #ff5722;       
-      transform: scale(1.2);       
+    
+    .botton_checkbox{
+      accent-color: #a88941;       
+      margin-right: 10px;      
     }
 
-    input[type="radio"] {
-      accent-color: #2196f3;       
-      margin-right: 10px;          
+    .radio{
+      cursor: pointer;
+      display: flex;
     }
+
   </style>
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
   <form>
     
     <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" 
+    <input class = "text_input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" 
            style="padding: 5px;"><br><br>
 
 
@@ -56,16 +58,16 @@
       <option>Usabilidad</option>
     </select><br><br>
 
-    >
+    
     <label>¿Qué colores te gustan?</label><br>
-    <label><input type="checkbox" name="color" value="rojo" style="margin-right: 6px;"> Rojo</label><br>
-    <label><input type="checkbox" name="color" value="azul" style="margin-right: 6px;"> Azul</label><br>
-    <label><input type="checkbox" name="color" value="verde" style="margin-right: 6px;"> Verde</label><br><br>
+    <label><input class="botton_checkbox" type="checkbox" name="color" value="rojo" style="margin-right: 6px;"> Rojo</label><br>
+    <label><input class="botton_checkbox" type="checkbox" name="color" value="azul" style="margin-right: 6px;"> Azul</label><br>
+    <label><input class="botton_checkbox" type="checkbox" name="color" value="verde" style="margin-right: 6px;"> Verde</label><br><br>
 
    
     <label>Género:</label><br>
-    <input type="radio" name="genero" value="masculino" style="cursor: pointer;"> Masculino
-    <input type="radio" name="genero" value="femenino" style="cursor: pointer;"> Femenino<br><br>
+    <input class="radio" type="radio" name="genero" value="masculino" style="cursor: pointer;"> Masculino
+    <input class="radio" type="radio" name="genero" value="femenino" style="cursor: pointer;"> Femenino<br><br>
 
     <button type="submit" style="background-color: #4caf50; color: white; border: none; padding: 8px 16px; border-radius: 6px;">Enviar</button>
   </form>
