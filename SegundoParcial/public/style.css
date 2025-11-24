@@ -1,0 +1,69 @@
+body {
+    background-color: #c8953e;
+}
+
+/* top, bottom, left, right no afectan al tamaño de la caja*/
+.caja-static{
+    position: static;
+    background-color: chocolate;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+}
+
+.caja-relative{
+    position: relative;
+    background-color: red;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.contenedor{
+    position: relative;
+    background-color: black;
+    width: 500px;
+    height: 100px;
+}
+
+.caja-absolute{
+    position: absolute;
+    background-color: white;
+    
+}
+
+.caja-fixed{
+    position: fixed;
+    background-color: blue;
+    top: 10px;
+    right: 20px;
+    color: white;
+}
+
+.whatsapp{
+    position: fixed;
+    background-color: red;
+    bottom: 5px;
+    left: 10px;
+
+}
+
+.google{
+    position: fixed;
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    bottom: 50px;
+    right: 10px;
+    font-size: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnz3UyUJTYnfj5XjO0NpONm3alFaB59vyEHQ&s");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px;
+    
+}
