@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURA</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="text-center">
+
+        <h1>TEMPERATURA</h1>
+    </header>
+
+    <main class="container">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="temperatura" placeholder="37">
+            <label for="temperatura">INGRESE SU TEMPERATURA:</label>
+        </div>
+
+        <div class="d-grid gap-2 mt-2">
+            <button type="button" id="btn_convertir" class="btn btn-primary">
+                CONVERTIR LA TEMPERATURA
+            </button>
+        </div>
+        <h1 id="txt_resultado_conversion_farenheit"></h1>
+        <h1 id="txt_resultado_conversion"></h1>
+        
+
+    </main>
+
+
+
+  
+
+    <main class="text-center">
+    <a href="index.html">
+        IR A CALCULADORA
+    </a>
+    </main>
+
+      <footer class="text-center">
+        c 2025 ESPE
+    </footer>
+
+    <script src="./public/js/conversion.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

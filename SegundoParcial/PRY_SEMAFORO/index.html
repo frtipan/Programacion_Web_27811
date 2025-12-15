@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMAFORO CONDICION</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container p-5">
+
+        <a href="Inicio.html" class="btn btn-light mb-3">Volver al Inicio</a>
+            Inicio-----Final
+    
+
+        <div class="form-check">
+            <input class="form-check-input" 
+            type="radio" 
+            name="color"
+            value="rojo" 
+        
+            id="radio_rojo">
+            <label class="form-check-label bg-danger" for="radio_rojo">
+                ROJO
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" 
+            type="radio" 
+            name="color" 
+            value="amarillo"
+            
+            id="radio_amarrillo" >
+            <label class="form-check-label bg-warning" for="radio_amarrillo">
+                AMARRILLO
+            </label>
+        </div>
+                <div class="form-check">
+            <input class="form-check-input" 
+            type="radio" 
+            name="color" 
+            value="verde"
+            
+            id="radio_verde">
+            <label class="form-check-label bg-success" for="radio_verde">
+                VERDE
+            </label>
+        </div>
+
+        <h1 class="text-white" id="txt_resultado">
+            
+        </h1>
+
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="./public/js/semaforo.js"></script> -->
+    <script src="./public/js/semaforo_if.js"></script>
+     
+
+</body>
+
+</html>
