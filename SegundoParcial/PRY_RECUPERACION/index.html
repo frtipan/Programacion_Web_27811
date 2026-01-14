@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Productos</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+
+  <h2 class="mb-3 text-center">Gestión de Productos</h2>
+
+  <input
+    type="text"
+    id="search"
+    class="form-control mb-3"
+    placeholder="Buscar producto..."
+  >
+
+  <form id="product-form" class="row g-2 mb-3">
+    <div class="col-md-4">
+      <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+    </div>
+
+    <div class="col-md-3">
+      <input type="number" id="precio" name="precio" class="form-control" placeholder="Precio">
+    </div>
+
+    <div class="col-md-3">
+      <select id="disponible" name="disponible" class="form-select">
+        <option value="true">Disponible</option>
+        <option value="false">Agotado</option>
+      </select>
+    </div>
+
+    <div class="col-md-2 d-grid">
+      <button id="submit-btn" class="btn btn-success">Agregar</button>
+    </div>
+  </form>
+
+  <div id="status" class="mb-3"></div>
+  <table class="table table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="product-list"></tbody>
+  </table>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>

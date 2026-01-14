@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS JS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>OBJETOS  EN JS</h1>
+        <hr>
+        <div id = "datos_persona">
+            
+        </div>
+        <hr>
+        
+            <div class="row g-3">
+
+            
+  <div class="col-md-6">
+    <label for="txt_nombres" class="form-label">NOMBRES</label>
+    <input type="text" class="form-control" id="txt_nombres" autofocus>
+  </div>
+  <div class="col-md-6">
+    <label for="txt_apellidos" class="form-label">APELLIDOS</label>
+    <input type="text" class="form-control" id="txt_apellidos" autofocus>
+  </div>
+  <div class="col-md-6">
+    <label for="txt_edad" class="form-label">EDAD</label>
+    <input type="number" class="form-control" id="txt_edad">
+  </div>
+  <div class="col-md-4">
+    <label for="sel_es_estudiante" class="form-label">ES ESTUDIANTE</label>
+    <select id="sel_es_estudiante" class="form-select">
+      <option value="" disabled selected>SELECCIONE...</option>
+      <option value="SI">SI...</option>
+      <option value="NO">NO...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="txt_estatura" class="form-label">ESTATURA</label>
+    <input type="text" class="form-control" id="txt_estatura">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="check_mayor_edad">
+      <label class="form-check-label" for="gridCheck">
+        ES MAYOR DE EDAD ?
+      </label>
+    </div>
+  </div>
+
+<div class="col-12">
+  <button type="button" class="btn btn-primary" id="btn_actualizar">
+    ACTUALIZAR
+  </button>
+</div>
+
+
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/objetos.js"></script>
+</body>
+</html>
