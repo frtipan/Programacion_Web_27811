@@ -204,20 +204,26 @@ class Vehiculo {
 Vehiculo.prototype.placa = '';
 Vehiculo.prototype.infracciones = 0;
 
-// Crear vehículos
+
 const vehiculo1 = new Vehiculo('Toyota', 'Corolla', 2019, 'Blanco');
 const vehiculo2 = new Vehiculo('Mazda', '3', 2015, 'Rojo');
+const vehiculo3 = new Vehiculo('Honda', 'Civic', 2020, 'Negro');
 
-// Asignar valores
 vehiculo1.placa = 'ABC-123';
 vehiculo1.infracciones = 3;
 
 vehiculo2.placa = 'XYZ-789';
 vehiculo2.infracciones = 1;
 
-// Mostrar resultados
+vehiculo3.placa = 'XYZ-739'
+vehiculo2.infracciones = 5;
+
+
 console.log(vehiculo1);
 console.log(`Exonerado: ${vehiculo1.exonerado()}`);
 
 console.log(vehiculo2);
 console.log(`Exonerado: ${vehiculo2.exonerado()}`);
+
+console.log(vehiculo3);
+console.log(`Exonerado: ${vehiculo3.exonerado()}`);
