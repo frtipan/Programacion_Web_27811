@@ -102,3 +102,46 @@ const getUsers = (callback) => {
 getUsers((users) => {
     console.log('Users:', users);
 });
+
+//Crear una funcion en donde se instancia propiedades de producto como id, nombre, stock y precio y si el stokc ve el producto que cambia, entonces el precio debe cambiar, es decir, si llega a 0 se cambie el precio a 0, y si el stock es mayor a 0 entonces el precio vuelve a su valor original a traves de funciones callback
+//actualizando inventario o inventario actualizado
+//si realizo un cambio va a decir actualizando inventario
+// Constructor
+function Producto() {
+
+  // Método asincrónico
+  this.actualizarInventario = function (id, nombre, stock, precio, callback) {
+    console.log('Actualizando inventario...');
+
+    setTimeout(() => {
+      // Las propiedades se crean AQUÍ
+      this.id = id;
+      this.nombre = nombre;
+      this.stock = stock;
+      this.precio = precio;
+      this.precioOriginal = precio;
+
+      // Regla de negocio
+      if (this.stock <= 0) {
+        this.precio = 0;
+      }
+
+      // Retorno del objeto actualizado
+      callback(this);
+    }, 2000);
+  };
+}
+
+// ===================== USO =====================
+
+// Crear instancia (vacía)
+let producto1 = new Producto();
+
+// Llamada asincrónica
+producto1.actualizarInventario(1, 'Impresora', 1, 50, function (producto) {
+  console.log(
+    `ID:${producto.id}, Producto:${producto.nombre}, Stock:${producto.stock}, Precio:$${producto.precio}`
+  );
+});
+
+
