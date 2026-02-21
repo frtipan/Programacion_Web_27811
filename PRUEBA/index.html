@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuarios</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CRUD Usuarios</h1>
+
+        <form id="formUser">
+            <input type="hidden" id="userId">
+
+            <div class="form-group">
+                <input type="text" id="firstname" placeholder="Nombre" required>
+                <input type="text" id="lastname" placeholder="Apellido" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+
+            <button class="btn-save" type="submit">Guardar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Usuario</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <!-- JS -->
+    <script src="js/prueba.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 let notas = [8, 4, 10, 6, 3, 9, 5, 7, 2];
 let aprobados = 0;
 let supletorios = 0;

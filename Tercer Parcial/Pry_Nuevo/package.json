@@ -1,5 +1,5 @@
 {
-  "name": "pry_deber",
+  "name": "pry_nuevo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,6 @@
   "type": "commonjs",
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "sweetalert2": "^11.26.17",
-    "vite": "^7.3.0"
+    "vite": "^7.3.1"
   }
 }

@@ -1,10 +1,10 @@
 {
-  "name": "pry_deber",
+  "name": "examen3p",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,8 +12,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "bootstrap": "^5.3.8",
-    "sweetalert2": "^11.26.17",
-    "vite": "^7.3.0"
+    "vite": "^7.3.1"
   }
 }

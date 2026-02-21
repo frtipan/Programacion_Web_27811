@@ -1,0 +1,3 @@
+3|Cien Años de Soledad|Gabriel García Márquez|Realismo Mágico|true
+7|Orgullo y Prejuicio|Jane Austen|Romance|true
+8|El Alquimista|Paulo Colho|Fantasia|true

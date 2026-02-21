@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Fetch API</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body class="bg-dark">
+
+
+<header class="bg-primary text-white py-3 mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h4 class="m-0">Usuarios</h4>
+
+        <button class="btn btn-light"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Ingresar Usuario
+        </button>
+    </div>
+</header>
+
+<div class="container py-4 text-white">
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+
+        <tbody id="userGet"></tbody>
+    </table>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="staticBackdrop" tabindex="-1">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5>Usuario</h5>
+                    <button class="btn-close"
+                        data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="userForm">
+
+                        <div class="mb-2">
+                            <label>Username</label>
+                            <input type="text" id="userName"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-2">
+                            <label>Email</label>
+                            <input type="email" id="email"
+                                class="form-control">
+                        </div>
+
+                        <div class="mb-2">
+                            <label>Password</label>
+                            <input type="password" id="password"
+                                class="form-control">
+                        </div>
+
+                        <button class="btn btn-primary mt-2">
+                            Guardar
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/generic.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.min.js"></script>
+
+
+</body>
+</html>
